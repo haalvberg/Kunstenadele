@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="./components/header-component.js" type="text/javascript" defer></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Front --> <div class="flex flex-col justify-between h-screen bg-slate-300">
+        <div></div>
+        <div class="flex flex-col items-center gap-10">
+            <h1 class="font-bold text-center text-4xl">
+                Galleriet som <br>aldri stenger
+            </h1>
+            <button class="border-2 border-black px-4 py-2 rounded-md font-bold text-lg bg-white">
+                Besøk hovedgalleriet</button>
+        </div>
+
+        <div class="flex flex-col items-center pb-4">
+            <p class="font-bold text-center">Utforsk alt <br><span class="material-symbols-outlined">
+                arrow_downward
+                </span></p>
+        </div>
+    </div>
+
+    <!-- Utforsk knapper --> <div class="container my-8">
+        <div class="flex flex-col gap-2">
+            <button class="py-8">Utforsk kunstnerne</button>
+
+            <div class="grid grid-cols-3 gap-2 place-content-stretch">
+                <button class="py-4 text-xs md:text-base">
+                    <span class="material-symbols-outlined">palette</span><br>
+                    Maleri
+                </button>
+                <button class="py-4 text-xs md:text-base">
+                    <span class="material-symbols-outlined">hexagon</span><br>
+                    Skulpturer
+                </button>
+                <button class="py-4 text-xs md:text-base">
+                    <span class="material-symbols-outlined">imagesmode</span><br>
+                    Fotografi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
