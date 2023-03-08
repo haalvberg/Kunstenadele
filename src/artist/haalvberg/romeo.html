@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="/src/components/header-component.js" type="text/javascript" defer></script>
+    <title>Romeo - Håkon Helberg - Kunsten å dele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Menu --><div id="menu" class="menu h-screen flex content-center">
+        <ul class="flex flex-col gap-2 text-2xl font-bold uppercase justify-center items-end width-screen-fix container ">
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunst</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunstnere</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Slik fungerer det</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kontakt</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Logg inn</a></li>
+        </ul>
+    </div>
+    
+    <!--  -->
+    <div class="flex flex-col items-center pt-40 gap-9 container">
+        <img class="artist-profile-picture-big" src="/src/data/profile-pics/meg.png" alt="">
+        <h1 class="text-2xl font-bold">Håkon Helberg</h1>
+        <p>Beskrivelse  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue ullamcorper, facilisis velit sit amet, porttitor nisl. Vestibulum auctor faucibus aliquam. Aenean a felis imperdiet, malesuada nisl eget, laoreet velit. Mauris placerat lectus id sapien pulvinar sodales. Nulla facilisi. Duis imperdiet eleifend ex, in egestas enim tincidunt vel.</p>
+        <button>Besøk Personlig Galleri</button>
+    </div>
+
+    <!-- gallery component -->
+    <div class="gallery-component">
+        <h2 class="container ">Verk fra kunstneren</h2>
+        <div class="container grid grid-cols-2 md:grid-cols-3 gap-4  ">
+            
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.35.40 - music festival i lofoten, oilpainting.png" alt="">
+                <h3>Tittel på verk</h3>
+                <p>Håkon Helberg</p>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.49 - benjamin been drinking whith his familiy oilpainting.png" alt="">
+                <h3>Tittel på verk</h3>
+                <p>Håkon Helberg</p>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.08 - benjamin be jamming his guitar oilpainting.png" alt="">
+                <h3>Tittel på verk</h3>
+                <p>Håkon Helberg</p>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.27.15 - intergalactic game of chess, oil painting.png" alt="">
+                <h3>Tittel på verk</h3>
+                <p>Håkon Helberg</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

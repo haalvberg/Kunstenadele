@@ -4,6 +4,12 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+}
+
+.width-screen-fix {
+  width: 100vw;
+  max-width: 100%;
 }
 
 .material-symbols-outlined {
@@ -13,6 +19,7 @@ body {
   'GRAD' 0,
   'opsz' 48
 }
+
 
 button {
   border-width: 2px;
@@ -26,7 +33,27 @@ button {
   font-size: 1.125rem/* 18px */;
   line-height: 1.75rem/* 28px */;
   background-color: #fff;
+}
 
+.menu {
+  position: fixed;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition: transform 0.78s cubic-bezier(.72,.01,.23,1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #e7e7e7;
+}
+
+.showMenu {
+  transform: translateX(0)
+}
+
+header {
+  z-index: 100;
 }
 
 .ham {
@@ -38,6 +65,14 @@ button {
     -ms-user-select: none;
     user-select: none;
   }
+  #hamMenu:hover .top {
+    stroke: rgb(220 38 38);
+  } #hamMenu:hover .middle {
+    stroke: rgb(220 38 38);
+  } #hamMenu:hover .bottom {
+    stroke: rgb(220 38 38);
+  }
+
   .hamRotate.active {
     transform: rotate(45deg);
   }
@@ -63,4 +98,47 @@ stroke-dasharray: 40 139;
 }
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
+}
+
+.artist-profile-picture-big{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Gallery Component */
+.gallery-component {
+  margin: 2rem 0;
+}
+
+.gallery-component h2{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-items{
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.gallery-items h3, .gallery-items p{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.gallery-items img{
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.gallery-items h3{
+  font-weight: 700;
+}
+
+.gallery-items p{
+  font-size: 0.7rem;
 }
