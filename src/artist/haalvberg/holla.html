@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="/src/components/header-component.js" type="text/javascript" defer></script>
+    <title>Romeo - Håkon Helberg - Kunsten å dele</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Menu -->
+    <div id="menu" class="menu h-screen flex content-center">
+        <ul class="flex flex-col gap-2 text-2xl font-bold uppercase justify-center items-end width-screen-fix p-10 ">
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunst</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunstnere</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Slik fungerer det</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kontakt</a></li>
+            <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Logg inn</a></li>
+        </ul>
+    </div>
+    
+    <!-- Piece info -->
+    <div class="flex flex-col lg:flex-row flex-wrap lg:justify-center pt-20  gap-9 container">
+        <div></div>
+        <img class="lg:shrink lg:max-h-screen lg:max-w-screen-md" src="/src/data/gallery-images/DALL·E 2023-02-15 13.35.40 - music festival i lofoten, oilpainting.png" alt="">
+        <div class="flex flex-col gap-4">
+            <div class="flex justify-between ">
+                <div class="flex flex-col justify-between">
+                    <h1 class="font-bold text-3xl">Hølla</h1>
+                    <p>Olje på lerret - 2022</p>
+                    <p>100cm x 100cm</p>
+                </div>
+                    <p class="text-xl">4000,-</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <img class="artist-profile-picture-small" src="/src/data/profile-pics/meg.png" alt="">
+                <h2 class="text-xl font-bold">Håkon Helberg</h2>
+            </div>
+            <div class="flex gap-4">
+                <button class="grow flex justify-center items-center gap-2">Legg til i handlekurven <span class="material-symbols-outlined">
+                    add_shopping_cart
+                    </span></button>
+                <button class="text-sm flex gap-2 items-center font-normal">Se med <br> kamera <span class="material-symbols-outlined">
+                    view_in_ar
+                    </span></button>
+            </div>
+    </div>
+
+       
+    </div>
+
+    <!-- gallery component -->
+    <div class="gallery-component mt-16">
+        <div class="container flex justify-between mb-4">
+            <h2 class="">Verk fra kunstneren</h2>
+            <div><button class="button3 flex items-center gap-2">Sorter<span class="material-symbols-outlined">sort</span></button></div>
+        </div>
+
+        <div class="container grid grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.35.40 - music festival i lofoten, oilpainting.png" alt="">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Hølla</h3>
+                        <p>Håkon Helberg</p>
+                        <p>100cm x 100cm</p>
+                    </div>
+                    <p class="price">4000,-</p>
+                </div>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.49 - benjamin been drinking whith his familiy oilpainting.png" alt="">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Hvem sine hender?</h3>
+                        <p>Håkon Helberg</p>
+                        <p>65cm x 65cm</p>
+                    </div>
+                    <p class="price">4600,-</p>
+                </div>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.08 - benjamin be jamming his guitar oilpainting.png" alt="">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Been Jammin</h3>
+                        <p>Håkon Helberg</p>
+                        <p>160cm x 160cm</p>
+                    </div>
+                    <p class="price">10000,-</p>
+                </div>
+                </a>
+            </div>
+        
+            <div class="gallery-items">
+                <a href="#">
+                <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.27.15 - intergalactic game of chess, oil painting.png" alt="">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Knights night</h3>
+                        <p>Håkon Helberg</p>
+                        <p>100cm x 100cm</p>
+                    </div>
+                    <p class="price">7000,-</p>
+                </div>
+                
+                </a>
+            </div>
+        </div>
+        <button class="button4 flex justify-center mx-auto mt-5 ">Last inn flere</button>
+        
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

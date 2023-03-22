@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <!-- Menu --><div id="menu" class="menu h-screen flex content-center">
-        <ul class="flex flex-col gap-2 text-2xl font-bold uppercase justify-center items-end width-screen-fix container ">
+    <!-- Menu -->
+    <div id="menu" class="menu h-screen flex content-center">
+        <ul class="flex flex-col gap-2 text-2xl font-bold uppercase justify-center items-end width-screen-fix p-10 ">
             <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunst</a></li>
             <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Kunstnere</a></li>
             <li id="menuItems" class="transition ease-out hover:text-red-600 hover:-translate-x-1 p-2"><a href="#">Slik fungerer det</a></li>
@@ -24,51 +25,83 @@
         </ul>
     </div>
     
-    <!--  -->
+    <!-- Artist info -->
     <div class="flex flex-col items-center pt-40 gap-9 container">
         <img class="artist-profile-picture-big" src="/src/data/profile-pics/meg.png" alt="">
         <h1 class="text-2xl font-bold">Håkon Helberg</h1>
-        <p>Beskrivelse  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue ullamcorper, facilisis velit sit amet, porttitor nisl. Vestibulum auctor faucibus aliquam. Aenean a felis imperdiet, malesuada nisl eget, laoreet velit. Mauris placerat lectus id sapien pulvinar sodales. Nulla facilisi. Duis imperdiet eleifend ex, in egestas enim tincidunt vel.</p>
+        <p class="italic">"Sitat elns"</p>
+        <p>Lengre Beskrivelse  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet augue ullamcorper, facilisis velit sit amet, porttitor nisl. Vestibulum auctor faucibus aliquam. Aenean a felis imperdiet, malesuada nisl eget, laoreet velit. Mauris placerat lectus id sapien pulvinar sodales. Nulla facilisi. Duis imperdiet eleifend ex, in egestas enim tincidunt vel.</p>
         <button>Besøk Personlig Galleri</button>
     </div>
 
     <!-- gallery component -->
-    <div class="gallery-component">
-        <h2 class="container ">Verk fra kunstneren</h2>
-        <div class="container grid grid-cols-2 md:grid-cols-3 gap-4  ">
+    <div class="gallery-component mt-16">
+        <div class="container flex justify-between mb-4">
+            <h2 class="">Verk fra kunstneren</h2>
+            <div><button class="button3 flex items-center gap-2">Sorter<span class="material-symbols-outlined">sort</span></button></div>
+        </div>
+
+        <div class="container grid grid-cols-2 lg:grid-cols-3 gap-4  ">
             
             <div class="gallery-items">
                 <a href="#">
                 <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.35.40 - music festival i lofoten, oilpainting.png" alt="">
-                <h3>Tittel på verk</h3>
-                <p>Håkon Helberg</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Hølla</h3>
+                        <p>Håkon Helberg</p>
+                        <p>100cm x 100cm</p>
+                    </div>
+                    <p class="price">4000,-</p>
+                </div>
                 </a>
             </div>
         
             <div class="gallery-items">
                 <a href="#">
                 <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.49 - benjamin been drinking whith his familiy oilpainting.png" alt="">
-                <h3>Tittel på verk</h3>
-                <p>Håkon Helberg</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Hvem sine hender?</h3>
+                        <p>Håkon Helberg</p>
+                        <p>65cm x 65cm</p>
+                    </div>
+                    <p class="price">4600,-</p>
+                </div>
                 </a>
             </div>
         
             <div class="gallery-items">
                 <a href="#">
                 <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.33.08 - benjamin be jamming his guitar oilpainting.png" alt="">
-                <h3>Tittel på verk</h3>
-                <p>Håkon Helberg</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Been Jammin</h3>
+                        <p>Håkon Helberg</p>
+                        <p>160cm x 160cm</p>
+                    </div>
+                    <p class="price">10000,-</p>
+                </div>
                 </a>
             </div>
         
             <div class="gallery-items">
                 <a href="#">
                 <img src="/src/data/gallery-images/DALL·E 2023-02-15 13.27.15 - intergalactic game of chess, oil painting.png" alt="">
-                <h3>Tittel på verk</h3>
-                <p>Håkon Helberg</p>
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3>Knights night</h3>
+                        <p>Håkon Helberg</p>
+                        <p>100cm x 100cm</p>
+                    </div>
+                    <p class="price">7000,-</p>
+                </div>
+                
                 </a>
             </div>
         </div>
+        <button class="button4 flex justify-center mx-auto mt-5 ">Last inn flere</button>
+        
     </div>
 
 

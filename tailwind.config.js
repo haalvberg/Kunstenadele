@@ -10,8 +10,13 @@ module.exports = {
         sm: '2rem',
         md: '6rem',
         lg: '12rem',
-        xl: '20rem',
+        xl: '20rem'},
+      maxWidth: {
+        md: '50%',
       }
+
+      
+      
     },
     extend: {},
   },
